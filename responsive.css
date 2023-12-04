@@ -1,0 +1,386 @@
+/* Code CSS pour tout le responsive du site Zephyr */
+
+@media (max-width: 230px){
+    .section-1 .container .btn-1 {
+     min-width: 9rem;
+    } 
+    .section-3 .btn-2 {
+     min-width: 6rem;
+    } 
+    .section-6 form .btn-3 {
+     min-width: 3rem;
+    } 
+ }
+ 
+ @media (min-width: 375px) {
+ 
+     .section-1 .logo h2 {
+         font-size: 1.6rem;
+     }
+     .section-1 header #menu i {
+         font-size: 1.2rem;
+     }
+     .section-1 .container h1 {
+         font-size: 2rem;
+     }
+     .section-1 .container h2,
+     .section-2 .droite h2,
+     .section-3 h2,
+     .section-4 h2,
+     .section-6 h2,
+     footer .contacts h2 {
+         font-size: 1.8rem;
+     }
+             
+     .section-4 .gallerie{
+         flex-direction: column;
+     }
+ }
+ 
+ @media (min-width: 425px) {
+ 
+     .section-1 .container h1 {
+         font-size: 2.2rem;
+     }
+     .section-1 .container h2,
+     .section-2 .droite h2,
+     .section-3 h2,
+     .section-4 h2,
+     .section-6 h2,
+     footer .contacts h2 {
+         font-size: 2rem;
+     }
+ }
+ @media (min-width: 768px) {
+ 
+     .section-1 .logo h2 {
+         font-size: 1.8rem;
+     }
+     .section-1 header #menu i {
+         font-size: 1.3rem;
+     }
+     .section-1 .container h1 {
+         font-size: 2.8rem;
+     }
+     .section-1 .container h2,
+     .section-2 .droite h2,
+     .section-3 h2,
+     .section-4 h2,
+     .section-6 h2,
+     footer .contacts h2 {
+         font-size: 2rem;
+     }
+ 
+     .section-1 .container{
+         display: grid ;
+         grid-template-columns: repeat(12,1fr);
+         text-align: left;
+     }
+     .section-1 .container h2,
+     .section-1 .container h1,
+     .section-1 .container p,
+     .section-1 .container .bas {
+         grid-column: 1/6;
+     }
+     .section-1 .container .bas {
+         padding: 48px 0px 0px 0px;
+     }
+     .section-1 .container .bas .spans {
+         padding: 40px 0px 0px 0px;
+         justify-content: left;
+     }
+     .section-1 .container .btn-1 {
+         padding: 10px ; 
+         margin: unset ;  
+     } 
+             /* Deuxieme section */
+     .section-2 {
+         display: grid ;
+         grid-template-columns: repeat(12,1fr);
+         gap: 32px;
+     }
+     .section-2 .deux-images {
+         grid-column: 1/7 ;
+     }
+     .section-2 .droite {
+         grid-column: 7/-1 ;
+     }
+ 
+     /* Troisième section */
+     .section-3 {
+         display: grid ;
+         grid-template-columns: repeat(12,1fr) ; 
+         padding: 56px 4%;
+     }
+     .section-3 h2 {
+         grid-column: 1/-1 ;
+         text-align: center;
+         margin-bottom: 40px ;
+     }
+     .section-3 p {
+         grid-column: 1/-1 ;
+         text-align: center;
+     }
+     .section-3 .btn-2 {
+         grid-column: 1/-1 ;
+         text-align: center;
+         margin-top: 32px;
+     }
+ 
+             /* Quatrième section (Gallerie d'images)  */
+     .section-4 {
+         padding: 64px 4% 88px;
+     }
+     .section-4 h2 {
+         margin: 0px 0px 64px 0px ;
+     }
+     .section-4 .gallerie {
+         display: grid ;
+         grid-template-columns: repeat(2,1fr) ;
+         gap: 16px;
+     }
+     .section-4 .gallerie img{
+         height: 100% ;
+     }
+ 
+             /* Sixième section contenant le formulaire */
+     .section-6 {
+         padding: 56px 4% 48px;
+     }
+     .section-6 form {
+         width: 50% ;
+         margin: auto;
+     }
+     .section-6 form div {
+         margin-bottom: 24px;
+     }
+     
+          /* Page Inspirations */
+     .section-4 .gallerie-inspiration {
+         display: grid ;
+         grid-template-columns: repeat(2,1fr) ;
+         gap: 16px;
+     }
+     .section-4 .gallerie-inspiration img{
+         height: 100% ;
+     }
+     .section-4 .gallerie-inspiration .image-9 {
+         grid-column: 1/-1;
+         height: 368px ;
+     }
+ }
+ 
+ @media (min-width: 1024px){
+     .section-1 {
+         height: 100vh ;
+     }
+     .section-1 header {
+         display: grid ;
+         grid-template-columns: repeat(12,1fr);
+     }
+     .section-1 nav a,
+     .section-1 .droite-header a{
+         font-size: 1.1rem ;
+     }
+     .section-1 header nav {
+         /* On fait apparaître la navbar sur la version desktop */
+         display: block;
+     }
+     .section-1 header .droite-header span:not(#menu){
+         display: block;
+     }
+     .section-1 header .droite-header #menu{
+         display: none;
+     }
+     .section-1 .logo {
+         grid-column: 1/3;
+     }
+     .section-1 header nav {
+         grid-column: 3/11;
+     }
+     .section-1 header nav ul {
+         display: flex ;
+         justify-content: space-evenly ;
+         align-items: center ;
+         list-style: none;
+     }
+     .section-1 header nav a {
+         display: inline-block;
+         padding: 4px 0px;
+         position: relative;
+         overflow: hidden;
+     }
+     .section-1 header nav a::after{
+         content: "";
+         position: absolute ;
+         height: 1px ;
+         width: 100% ;
+         bottom: 0px ;
+         left: 0px ;
+         background-color: var(--colorPrimary);
+         border-radius: 6px;
+         transform: translateX(-100%);
+         transition: transform 0.2s ease-in-out;
+     }
+     .section-1 header nav a:hover::after{
+         transform: translateX(0);
+     }
+     .section-1 header .droite-header {
+         display: flex ;
+         justify-content: right ;
+         align-items: center ;
+         grid-column: 11/-1;
+     }
+     .section-1 header .droite-header span:not(:first-child){
+         margin-left: 32px;
+     }
+     .section-1 .container h1 {
+         font-size: 3rem;
+     }
+     .section-1 .container h2,
+     .section-2 .droite h2,
+     .section-3 h2,
+     .section-4 h2,
+     .section-6 h2,
+     footer .contacts h2 {
+         font-size: 2.2rem;
+     }
+     .section-1 .container .btn-1 {
+         padding: 12px ;   
+     } 
+ 
+     /* Quatrième section (Gallerie d'images)  */
+     .section-4 .gallerie {
+         display: grid ;
+         grid-template-columns: repeat(12,1fr) ;
+         gap: 16px;
+         grid-template-rows: 232px repeat(2,155px);
+     }
+     .section-4 .gallerie .item-1 {
+         grid-column: 1/5;
+     }
+     .section-4 .gallerie .item-2 {
+         grid-column: 5/9;
+         grid-row: 1/3;
+     }
+     .section-4 .gallerie .item-3 {
+         grid-column: 9/-1;
+     }
+     .section-4 .gallerie .item-4 {
+         grid-column: 1/5;
+         grid-row: 2/4;
+     }
+     .section-4 .gallerie .item-5 {
+         grid-column: 5/9 ;
+         grid-row: 3/4;
+     }
+     .section-4 .gallerie .item-6 {
+         grid-column: 9/-1;
+         grid-row: 2/3;
+     }
+     .section-4 .gallerie .item-7 {
+         grid-column: 1/9;
+     }
+     .section-4 .gallerie .item-8 {
+         grid-column: 9/-1;
+         grid-row: 3/5;
+     }
+ 
+         /* Partie Inspirations */
+     .section-4 .gallerie-inspiration {
+         display: grid ;
+         grid-template-columns: repeat(12,1fr) ;
+         gap: 16px;
+         grid-template-rows: 232px 155px;
+     }
+     .section-4 .gallerie-inspiration .image-1 {
+         grid-column: 1/5;
+     }
+     .section-4 .gallerie-inspiration .image-2 {
+         grid-column: 5/9;
+         grid-row: 1/3;
+     }
+     .section-4 .gallerie-inspiration .image-3 {
+         grid-column: 9/-1;
+     }
+     .section-4 .gallerie-inspiration .image-4 {
+         grid-column: 1/5;
+         grid-row: 2/4;
+     }
+     .section-4 .gallerie-inspiration .image-5 {
+         grid-column: 5/9 ;
+         grid-row: 3/4;
+     }
+     .section-4 .gallerie-inspiration .image-6 {
+         grid-column: 9/-1;
+         grid-row: 2/4;
+     }
+     .section-4 .gallerie-inspiration .image-7 {
+         grid-column: 1/5;
+     }
+     .section-4 .gallerie-inspiration .image-8 {
+         grid-column: 9/-1 ;
+     }
+     .section-4 .gallerie-inspiration .image-9 {
+         grid-column: 5/9;
+         grid-row: 4/5; 
+         height: auto ;
+     }
+ }
+ 
+ @media (min-width: 1440px){
+     .section-1 {
+         height: 90vh;
+     }
+     .section-1 header {
+         padding: 8px 8%;
+      }
+     .section-1 .container  {
+        display: flex ;
+        flex-direction: column;
+        align-items: center ;
+     } 
+     .section-1 .container h1 {
+         font-size: 3.4rem;
+     }
+     .section-1 .container h2 {
+         font-size: 2.6rem; 
+     }
+     .section-2 .droite h2,
+     .section-3 h2,
+     .section-4 h2,
+     .section-6 h2,
+     footer .contacts h2 {
+         font-size: 2.2rem;
+     }
+     .section-1 .container .bas .spans {
+         justify-content: center;
+     }
+     .section-1 .container .btn-1 {
+         padding: 10px ;
+         font-size: 1rem;    
+     }
+     .section-1 .spans span {
+         padding: 20px;
+     } 
+     .section-2 {
+         padding: 72px 8% 88px;
+      }
+      .section-3 {
+         padding: 64px 8%;
+      }
+      .section-3 .btn-2 {
+         padding: 10px ;
+         font-size: 1rem ;
+      }
+      .section-4 {
+         padding: 56px 8% 80px;
+      }
+      .section-6 form {
+         width: 35% ;
+     }
+     .section-6 .btn-3 {
+         padding: 10px ;
+         font-size: 1rem ;
+     }
+ }
